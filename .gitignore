@@ -1,5 +1,39 @@
-.venv/ 
-__pycache__/ 
-data/raw/ 
-data/processed/ 
-*.csv 
+# Ignore sensitive files
+.env
+*.env
+
+# Ignore virtual environment
+.venv/
+venv/
+env/
+
+# Ignore Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Ignore data files (too large for Git)
+*.csv
+*.xlsx
+*.json
+data/raw/*
+data/processed/*
+
+# Keep data directory structure
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# Ignore model files
+*.pkl
+*.h5
+*.joblib
+
+# Ignore IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
